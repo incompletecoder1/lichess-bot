@@ -1,9 +1,9 @@
-token: "2PPObzwwnudPIZzc"     # lichess OAuth2 Token
+token: "eObKX7ij5dkvvaG5"     # lichess OAuth2 Token
 url: "https://lichess.org/"  # lichess base URL
 
 engine:                      # engine settings
   dir: "./"          # dir containing engines, relative to this project
-  name: "stockfishmodern.exec"        # binary name of the engine to use
+  name: "stockfishmodern.exe"        # binary name of the engine to use
   protocol: "uci"            # "uci" or "xboard"
   uci_ponder: true           # think on opponent time; only works if "protocol" is "uci"
   polyglot:
@@ -23,14 +23,14 @@ engine:                      # engine settings
 # engine_options:           # any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
-    Move Overhead: 100       # increase if your bot flags games too often
+    Move Overhead: 5000       # increase if your bot flags games too often
     Ponder: true
     Threads: 7               # max CPU threads the engine can use
     Hash: 400                # max memory (in megabytes) the engine can allocate
 #   go_commands:             # additional options to pass to the UCI go command
 #     nodes: 1               # Search so many nodes only.
 #     depth: 5               # Search depth ply only.
-#     movetime: 1000         # Integer. Search exactly movetime milliseconds.
+#     movetime: 100         # Integer. Search exactly movetime milliseconds.
 # xboard_options:            # arbitrary xboard options passed to the engine
 #   cores: "4"
 #   memory: "4096"
@@ -54,7 +54,7 @@ challenge:                   # incoming challenges
   min_increment: 0           # minimum amount of increment to accept a challenge
   variants:                  # chess variants to accept (http://lichess.org/variant)
     - standard
-    - fromPosition
+#    - fromPosition
 #   - antichess
 #   - atomic
 #   - chess960
