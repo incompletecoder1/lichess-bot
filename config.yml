@@ -6,6 +6,7 @@ engine:                      # engine settings
   name: "stockfishmodern.exe"        # binary name of the engine to use
   protocol: "uci"            # "uci" or "xboard"
   uci_ponder: true           # think on opponent time; only works if "protocol" is "uci"
+  welcome_message: Hello, Coded By @pranjalthechampion               # welcoming message like the name of the coder
   polyglot:
     enabled: true           # activate polyglot book
     book:
